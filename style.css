@@ -1,0 +1,234 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline: none;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+* {
+   box-sizing: border-box; 
+}
+
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+    overflow: auto;
+    position: relative;
+}
+
+.logo {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 263px;
+}
+
+.bg {
+    background: url('img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px solid green;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.bgp {
+    position: relative;
+    z-index: 2;
+    bottom: 500px;
+    overflow: hidden;
+    /* height: 200px; */
+}
+
+.bgp.m {
+    display: none;
+}
+ 
+.con {
+    position: relative;
+    z-index: 9; 
+}
+
+.title {
+    width: 50vw;
+    height: 30vh;
+    max-width: 1118px;
+    min-width: 300px;
+    /* margin-top: 10vh; */
+}
+
+.t2 {
+    font-size: 40px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.493);
+    text-align:center;
+    border-radius: 5px;
+    color:#73ae69;
+    width: 715px;
+    max-width: 715px;
+    height: 77px;
+    /* position: absolute; */
+    line-height: 77px;
+    letter-spacing: 4px;
+}
+
+.des {
+    text-align:center;
+    width: 501px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 7.78px;
+    color: #878787;
+    /* position: relative; */
+    margin-top: 2vh;
+}
+
+.mybtn {
+    display: inline-block;
+    width: 450px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 64px;
+    background-color: #ffc900;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.mybtn:hover{
+    box-shadow: 0 2px 50px 0 rgba(255, 255, 255, 0.8);
+}
+
+.mybtn img {
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+
+.mybtng {
+    background-color: #67d455;
+}
+
+.t-m {
+    display: none;
+}
+
+@media (max-width: 767px) {
+}
+/* mobile */
+@media (max-width: 480px) {
+  .logo {
+      width: 105px;
+      margin-top: 15px;
+  }
+  .t2 {
+    width: 286px;
+    height: 31px; 
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+  .des {
+      font-size: 12px;
+  }
+  .t-pc {
+    display: none;
+  }
+  .t-m {  
+    display: block;  
+  }
+  .pl {
+    display: none;  
+  }
+  .mybtn {
+    width: 232px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+  }
+  .mybtn img {
+    width: 22px;  
+  }
+  .bgp.p {
+   display: none;   
+  }
+  .bgp.m {
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .bgp.m img {
+    width: 100%;
+    height: 100%;  
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+ .t-pc{
+    max-width: 600px;   
+  }
+  .pl {
+      display: none;
+  }
+  .bgp {
+    bottom: 270px;
+    left: -120px;
+  }
+  .bgp.p {
+    display: none;   
+   }
+   .bgp.m {
+     bottom: 0;
+     display: flex;
+     position: absolute;
+     z-index: 2;
+     right: 0;
+     overflow: hidden;
+   }
+   .bgp.m img {
+     width: 100%;
+     height: 100%;  
+   }
+}
+@media (min-width: 980px) {
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+}
