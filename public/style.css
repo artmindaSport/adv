@@ -114,9 +114,10 @@ body {
 
 .mybtn {
     display: inline-block;
+    padding: 1px 20px;
     width: 450px;
-    height: 120px;
-    line-height: 120px;
+    /* height: 120px;
+    line-height: 120px; */
     border-radius: 64px;
     background-color: #ffc900;
     font-size: 40px;
@@ -177,13 +178,12 @@ body {
     display: none;  
   }
   .mybtn {
-    width: 232px;
-    height: 55px;
-    font-size: 18px;
+    width: 240px;  
+    font-size: 28px;
     line-height: 55px;
   }
   .mybtn img {
-    width: 22px;  
+    width: 28px;  
   }
   .bgp.p {
    display: none;   
